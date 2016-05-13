@@ -1,4 +1,4 @@
-package it.bemyeye.learn;
+package it.bemyeye.learn.basic;
 
 class Car {
     int cylinderCapacity;
