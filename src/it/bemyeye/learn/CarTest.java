@@ -8,8 +8,7 @@ public class CarTest {
 
     @Test
     public void accelerateRaisesTheCarSpeed() {
-        Car car = new Car();
-        car.speed = 10;
+        Car car = new Car(60, 10);
         car.accelerate(30);
 
         assertEquals(40, car.speed);
@@ -17,7 +16,8 @@ public class CarTest {
 
     @Test
     public void constructorBuildsAnInstanceOfCar() {
-        assertTrue(new Car() instanceof Car);
+        assertTrue(new Car(1) instanceof Car);
     }
 
 }
+
