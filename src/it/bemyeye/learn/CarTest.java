@@ -1,3 +1,5 @@
+package it.bemyeye.learn;
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
@@ -10,7 +12,7 @@ public class CarTest {
         car.speed = 10;
         car.accelerate(30);
 
-        assertEquals(42, car.speed);
+        assertEquals(40, car.speed);
     }
 
     @Test
