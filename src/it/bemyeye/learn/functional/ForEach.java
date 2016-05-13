@@ -7,20 +7,21 @@ public class ForEach {
 
     public static void main(String[] args) {
         new NamePrinter().print("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
+        new CaseConverter().toLower("Brian", "Nate", "Neal", "Raju", "Sara", "Scott");
     }
 
 }
 
 class NamePrinter {
-
     public void print(String... names) {
-        Arrays.asList(names).forEach(printToSystemConsole());
-
+        Arrays.asList(names).forEach(System.out::println);
     }
+}
 
-    private Consumer<String> printToSystemConsole() {
-        return string -> System.out.println(string);
+class CaseConverter {
+
+    public void toLower(String...strings) {
+        Arrays.asList(strings).stream().map(s -> s.toLowerCase()).forEach(System.out::println);
     }
-
 }
 
