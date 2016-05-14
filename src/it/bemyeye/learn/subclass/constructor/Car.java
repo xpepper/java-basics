@@ -1,24 +1,44 @@
 package it.bemyeye.learn.subclass.constructor;
 
-class Auto {
+class Car {
     int speed;
     int cylinders;
 
-    public Auto() {
-        this.speed = 0;
-        this.cylinders = 0;
-        System.out.println("Building an instance of Auto...");
+    public Car() {
+        this(0,0);
+        System.out.println("Building an instance of Car()");
     }
+
+    public Car(int cylinders) {
+        this(0, cylinders);
+        System.out.println("Building an instance of Car(cylinders)");
+    }
+
+    public Car(int speed, int cylinders) {
+        this.speed = speed;
+        this.cylinders = cylinders;
+        System.out.println("Building an instance of Car(speed, cylinders)");
+    }
+
 }
 
-class Taxi extends Auto {
+class Taxi extends Car {
     String license;
 
-    public Taxi() {
-        // chiama prima il costruttore vuoto della superclasse (Auto)
-        // chiama poi questo costruttore
-        this.license = "DEFAULT LICENSE";
+    Taxi() {
+        super(123);                       // chiama esplicitamente un costruttore nella classe padre...
+        this.license = "DEFAULT LICENSE"; // poi esegue il resto di questo costruttore
         System.out.println("Building an instance of Taxi...");
+    }
+
+    Taxi(String license) {
+        super(1600);
+        this.license = license;
+    }
+
+    Taxi(String license, int speed, int cylinders) {
+        super(speed, cylinders);
+        this.license = license;
     }
 }
 
