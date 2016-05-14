@@ -1,35 +1,21 @@
 package it.bemyeye.learn.subclass.constructor;
 
 class Car {
-    int speed;
     int cylinders;
+    int speed;
 
-    public Car() {
-        this(0,0);
-        System.out.println("Building an instance of Car()");
+    Car(int cylinders) {
+        this(10, cylinders);
     }
 
-    public Car(int cylinders) {
-        this(0, cylinders);
-        System.out.println("Building an instance of Car(cylinders)");
-    }
-
-    public Car(int speed, int cylinders) {
+    Car(int speed, int cylinders) {
         this.speed = speed;
         this.cylinders = cylinders;
-        System.out.println("Building an instance of Car(speed, cylinders)");
     }
-
 }
 
 class Taxi extends Car {
     String license;
-
-    Taxi() {
-        super(123);                       // chiama esplicitamente un costruttore nella classe padre...
-        this.license = "DEFAULT LICENSE"; // poi esegue il resto di questo costruttore
-        System.out.println("Building an instance of Taxi...");
-    }
 
     Taxi(String license) {
         super(1600);
@@ -39,11 +25,5 @@ class Taxi extends Car {
     Taxi(String license, int speed, int cylinders) {
         super(speed, cylinders);
         this.license = license;
-    }
-}
-
-class Test {
-    public static void main(String[] args) {
-        Taxi taxi = new Taxi();
     }
 }
