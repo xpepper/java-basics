@@ -1,7 +1,7 @@
 package it.bemyeye.learn.subclass;
 
 import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -24,4 +24,11 @@ public class CarAndTaxiTest {
         System.out.println(car);
         System.out.println(taxi);
     }
+
+    @Test
+    public void classNames() {
+        assertEquals("it.bemyeye.learn.subclass.Car", new Car().getClass().getName());
+        assertEquals("it.bemyeye.learn.subclass.Taxi", new Taxi("asd").getClass().getName());
+    }
+
 }
