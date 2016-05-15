@@ -1,7 +1,5 @@
 package it.bemyeye.learn.subclass.instance_of;
 
-import static org.hamcrest.CoreMatchers.instanceOf;
-
 import java.math.BigDecimal;
 
 class Car {
