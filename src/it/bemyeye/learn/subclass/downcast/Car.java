@@ -41,6 +41,5 @@ class Test {
         Taxi aFailingTaxi = (Taxi) new Car(); // dev's mistake: runtime exception!
 
         // Taxi taxi = new Car(); // <= another compile error: a car *is not* a taxi
-
     }
 }
