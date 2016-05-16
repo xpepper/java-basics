@@ -2,16 +2,18 @@ package it.bemyeye.learn.exception;
 
 public class CarApp {
 
-    public static void main(String[] args) {
-        int cilindrata = 2000;
-        if (args.length == 1) {
+    public static void main(String[] args) throws LicenseException {
+        int cylinders = 2000;
+        String license = "";
+        if (args.length == 2) {
             try {
-                cilindrata = Integer.parseInt(args[0]);
+                cylinders = Integer.parseInt(args[0]);
+                license = args[1];
             } catch (NumberFormatException ex) {
                 System.out.println("formato errato");
             }
         }
-        Taxi taxi = new Taxi(cilindrata, "WER78MN");
+        Taxi taxi = new Taxi(cylinders, license);
         stampaImporto(taxi);
     }
 
