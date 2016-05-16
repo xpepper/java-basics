@@ -17,8 +17,8 @@ Most of the examples works fine with any Java version from 5 on. Some of them ar
 * Sales Tax Kata (https://github.com/xpeppers/sales-taxes-problem)
 * Number Gaps Kata (https://github.com/andreabertagnolli/numbers-gaps-kata)
 * Opening Hours Kata (https://github.com/christian-fei/opening-hours-kata)
-* http://www.programmr.com/challenges/palindrom-string-2
-* http://codingbat.com/java
+* Programmr | Your Online Code Lab: http://www.programmr.com/challenges/palindrom-string-2
+* CodingBat, code practice (http://codingbat.com/java)
 
 ### Books
 * "Clean Code” by Robert C. Martin (http://www.amazon.it/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882), really a great starter book.
