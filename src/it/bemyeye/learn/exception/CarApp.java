@@ -4,7 +4,7 @@ public class CarApp {
 
     public static void main(String[] args) {
         int cilindrata = 2000;
-        if (args.length == 2) {
+        if (args.length == 1) {
             try {
                 cilindrata = Integer.parseInt(args[0]);
             } catch (NumberFormatException ex) {
