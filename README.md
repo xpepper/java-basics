@@ -7,6 +7,7 @@ Most of the examples works fine with any Java version from 5 on. Some of them ar
 
 * Awesome Java: https://github.com/akullpp/awesome-java
 * Awesome Java8: https://github.com/tedyoung/awesome-java8
+* A list of useful Java frameworks, libraries, software and hello worlds examples: https://github.com/Vedenin/useful-java-links
 * Modern Java development: https://github.com/giorgiosironi/game-of-life-modern-java
 
 ### Exercises
