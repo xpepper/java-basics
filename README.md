@@ -3,7 +3,7 @@ These are just a collection of samples I wrote down while preparing my Java cour
 
 Most of the examples works fine with any Java version from 5 on. Some of them are specific for Java 7 and Java 8.
 
-## More resources
+## More resources
 
 * Awesome Java: https://github.com/akullpp/awesome-java
 * Awesome Java8: https://github.com/tedyoung/awesome-java8
@@ -24,7 +24,7 @@ Most of the examples works fine with any Java version from 5 on. Some of them ar
 * Number Gaps Kata (https://github.com/andreabertagnolli/numbers-gaps-kata)
 * Opening Hours Kata (https://github.com/christian-fei/opening-hours-kata)
 
-#### About Refactoring
+#### About Refactoring
 
 * GildedRose Refactoring Kata: https://github.com/emilybache/GildedRose-Refactoring-Kata
 * Tennis Refactoring Kata: https://github.com/emilybache/Tennis-Refactoring-Kata
